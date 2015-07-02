@@ -9044,9 +9044,9 @@ Description: Controls the strength of dispersion corrections, s8 , in Grimme?s D
             self.dict_of_keywords["DFT_D3_S8"]=value.lower()
 
 
-    def dft_d3_sr6(self,value="show"):
+    def dft_d3_rs6(self,value="show"):
         '''
-Name: DFT_D3_SR6
+Name: DFT_D3_RS6
 Type: INTEGER
 Factor: 0.001
 Default: 1000 [=1.000]
@@ -9055,16 +9055,16 @@ Options: Range from 0 [=0] to 9999 [=9.999]
 Description: Controls the strength of dispersion corrections, sr6 , in the Grimme?s DFT-D3 method.
     '''
         if value == "":
-            if "DFT_D3_SR6" in self.dict_of_keywords:
-                del self.dict_of_keywords["DFT_D3_SR6"]
+            if "DFT_D3_RS6" in self.dict_of_keywords:
+                del self.dict_of_keywords["DFT_D3_RS6"]
                 print "Keyword removed."
         elif value == "show":
-            if "DFT_D3_SR6" in self.dict_of_keywords:
-                return self.dict_of_keywords["DFT_D3_SR6"]
+            if "DFT_D3_RS6" in self.dict_of_keywords:
+                return self.dict_of_keywords["DFT_D3_RS6"]
             else:
                 print "Value not set."
         else:
-            self.dict_of_keywords["DFT_D3_SR6"]=value.lower()
+            self.dict_of_keywords["DFT_D3_RS6"]=value.lower()
 
 
     def nl_correlation(self,value="show"):
